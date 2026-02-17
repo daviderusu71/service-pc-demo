@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>FixIT Service PC</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0b0f14;
+    color:#e5e5e5;
+}
+
+header{
+    background:url("https://images.unsplash.com/photo-1587202372775-e229f172b9d7") center/cover no-repeat;
+    padding:120px 20px;
+    text-align:center;
+}
+
+header h1{
+    color:#22c55e;
+    font-size:48px;
+}
+
+section{
+    padding:60px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+h2{
+    color:#22c55e;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:8px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+input,textarea{
+    padding:12px;
+    border:none;
+    border-radius:6px;
+}
+
+button{
+    background:#22c55e;
+    border:none;
+    padding:12px;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>FixIT Service PC</h1>
+    <p>Reparații rapide calculatoare și laptopuri</p>
+</header>
+
+<section>
+    <h2>Despre noi</h2>
+    <p>
+    Suntem specializați în reparații PC, laptopuri și upgrade hardware.
+    Diagnostic rapid, prețuri corecte și garanție pentru lucrări.
+    Calculatorul tău revine la viață în aceeași zi.
+    </p>
+</section>
+
+<section>
+    <h2>Lucrările noastre</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+        <img src="https://images.unsplash.com/photo-1517430816045-df4b7de1f7b6">
+        <img src="https://images.unsplash.com/photo-1580894894513-541e068a3e2b">
+        <img src="https://images.unsplash.com/photo-1593642634367-d91a135587b5">
+    </div>
+</section>
+
+<section>
+    <h2>Solicită reparație</h2>
+    <form onsubmit="event.preventDefault(); alert('Mesaj trimis!');">
+        <input type="text" placeholder="Nume" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Descrie problema"></textarea>
+        <button>Trimite</button>
+    </form>
+</section>
+
+</body>
+</html>
